@@ -32,5 +32,5 @@ combination of repositories of .net apps with sub repositories which also contai
 .net apps:
 
 ```powershell
-	nuget config -set repositoryPath=C:\Nuget
+	nuget config -set repositoryPath=C:\Nuget\packages
 ```
