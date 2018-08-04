@@ -11,4 +11,26 @@ CodingTools at this moment contains:
   - msbuild 2015 (=v14)
   
 To set things up, clone the repo and set your path to contain the folder.
+The easiest way should be: 
+```powershell
+	New-Item $Profile
+	vim $Profile
+```
+
+Then enter e.g.:
+```powershell
+$ENV:PATH=”$ENV:PATH;c:\Projekte\CodingTools”
+```
+
 Run provided installers as needed.
+
+
+## nuget
+
+To set a fixed local directory for nuget packages, which will allow for more flexible 
+combination of repositories of .net apps with sub repositories which also contain 
+.net apps:
+
+```powershell
+	nuget config -set repositoryPath=C:\Nuget
+```
